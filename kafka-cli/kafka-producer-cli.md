@@ -15,13 +15,13 @@ Use control C to terminate.
 
 ### what if topic doesn't exist ??
 
-> If one write to write on a topic which doesnot exist, in this case first topic will get created and data will be written there.\
+> If one try to write on a topic which doesnot exist, in this case first topic will get created and data will be written there.\
 > Above will genearate warning and this will take some time.
 
 ### How to write messages on kafka topic in same partition.
 
-If you have multiple partition inside kafka topic, A message without message key can be wriiten to any of the partition. \
-It the message is having key, then all message with same key sits in same partition.
+If you have multiple partition inside kafka topic, A message without message key can be wriiten to any of the partition. following round-robin approach.\
+If the message is having key, then all message with same key sits in same partition.
 
 Setting properties for keys
 ```

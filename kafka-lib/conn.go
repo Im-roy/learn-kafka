@@ -54,4 +54,5 @@ func CloseKafkaConnection(conn *kafka.Conn) {
 	if err := conn.Close(); err != nil {
 		log.Fatal("failed to close connection:", err)
 	}
+	log.Println("Successfully closed the kafka connection !!")
 }

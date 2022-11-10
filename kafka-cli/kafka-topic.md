@@ -33,6 +33,15 @@ Topic: third_topic	TopicId: 2PyadBtqQCONjrLylMjO3g	PartitionCount: 3	Replication
 	Topic: third_topic	Partition: 2	Leader: 0	Replicas: 0	Isr: 0
 ```
 
+### Describe a topic using topic name
+
+```
+kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic test_topic
+Topic: test_topic	TopicId: 7sg-GFVuSAqxjnt63A9BWw	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
+	Topic: test_topic	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+
+```
+
 ### How to delete a topic 
 
 This command will delete a topic named first_topic
